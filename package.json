@@ -1,7 +1,7 @@
 {
-  "name": "clean-functions",
+  "name": "mocking",
   "version": "1.0.0",
-  "description": "clean-functions",
+  "description": "Mocking",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -16,7 +16,7 @@
     "show:dist": "live-server dist"
   },
   "keywords": [
-    "clean-functions"
+    "Mocking"
   ],
   "author": "Stegur",
   "license": "ISC",
@@ -32,9 +32,7 @@
     "eslint-plugin-import": "^2.18.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^3.1.0",
     "jest": "^24.9.0",
-    "lint-staged": "^9.5.0",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.8.0",
     "webpack": "^4.41.2",
@@ -43,16 +41,5 @@
   },
   "dependencies": {
     "core-js": "^3.4.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.*": [
-      "npm run lint",
-      "git add ."
-    ]
   }
 }
